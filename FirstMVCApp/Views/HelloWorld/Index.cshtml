@@ -1,0 +1,16 @@
+﻿@model List<FirstMVCApp.Models.DogViewModel>
+
+@{
+
+}
+<h1>Dog Hotel</h1>
+<p>Here are the current dogs scheduled for the hotel.</p>
+<ul>
+    @foreach (var dog in Model)
+    {
+        <li>
+            @dog.Name (@dog.Age)
+        </li>
+
+    }
+</ul>
